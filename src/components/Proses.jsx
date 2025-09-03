@@ -4,11 +4,11 @@ function Proses() {
   return (
     <section id="proses" className="p-5 bg-light text-center">
       <div className="container">
-        <h2 className="fw-bold mb-4">Bagaimana Prosesnya?</h2>
+        <h2 className="fw-bold mb-5">Bagaimana Prosesnya?</h2>
         <div className="row">
           <div className="col-md-3 mb-3">
             <div className="card p-3 shadow-sm h-100">
-              <h4>1️⃣ Konsultasi</h4>
+              <h4>Konsultasi</h4>
               <p>
                 Hubungi kami dan ceritakan kebutuhan riset atau bimbinganmu.
               </p>
@@ -16,7 +16,7 @@ function Proses() {
           </div>
           <div className="col-md-3 mb-3">
             <div className="card p-3 shadow-sm h-100">
-              <h4>2️⃣ Diskusi</h4>
+              <h4>Diskusi</h4>
               <p>
                 Kami akan memberikan solusi, metode, dan rencana kerja yang
                 sesuai.
@@ -25,7 +25,7 @@ function Proses() {
           </div>
           <div className="col-md-3 mb-3">
             <div className="card p-3 shadow-sm h-100">
-              <h4>3️⃣ Eksekusi</h4>
+              <h4>Eksekusi</h4>
               <p>
                 Proses pengerjaan dilakukan sesuai timeline yang disepakati.
               </p>
@@ -33,7 +33,7 @@ function Proses() {
           </div>
           <div className="col-md-3 mb-3">
             <div className="card p-3 shadow-sm h-100">
-              <h4>4️⃣ Hasil</h4>
+              <h4>Hasil</h4>
               <p>
                 Kamu menerima hasil riset/bimbingan dengan laporan yang jelas.
               </p>

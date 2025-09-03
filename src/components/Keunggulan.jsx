@@ -5,6 +5,13 @@ function Keunggulan() {
     <section id="keunggulan" className="p-5 bg-white text-center">
       <div className="container">
         <h2 className="fw-bold mb-4">Kenapa Pilih Scriptiva?</h2>
+        <h5 className="mb-5 text-muted">
+          Sebagai konsultan penelitian terdepan, Scriptiva telah membuktikan
+          kualitas layanannya dengan 1.200+ proyek penelitian yang berhasil kami
+          bantu. Kami berkomitmen menjembatani mahasiswa, akademisi, dan
+          profesional dari tantangan penelitian menuju kesuksesan akademik
+          maupun bisnis
+        </h5>
         <div className="row">
           <div className="col-md-4 mb-3">
             <div className="card p-3 shadow-sm h-100">

@@ -1,14 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
+import "@fontsource/outfit";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Hero from "./components/Hero.jsx";
 import Keunggulan from "./components/Keunggulan";
 import Proses from "./components/Proses";
-import Harga from "./components/Harga";
+import Layanan from "./components/Layanan";
 import Testimoni from "./components/Testimoni";
-import Kontak from "./components/Kontak";
 import Footer from "./components/Footer";
 
 function App() {
@@ -18,9 +18,8 @@ function App() {
       <Hero />
       <Keunggulan />
       <Proses />
-      <Harga />
+      <Layanan />
       <Testimoni />
-      <Kontak />
       <Footer />
     </>
   );
