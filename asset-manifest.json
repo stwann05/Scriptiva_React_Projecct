@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Scriptiva_React_Projecct/static/css/main.033c6540.css",
+    "main.js": "/Scriptiva_React_Projecct/static/js/main.2146b0e6.js",
+    "static/js/453.51b6937f.chunk.js": "/Scriptiva_React_Projecct/static/js/453.51b6937f.chunk.js",
+    "static/media/bg.jpg": "/Scriptiva_React_Projecct/static/media/bg.5c4053191e9794f2af4c.jpg",
+    "static/media/outfit-latin-400-normal.woff": "/Scriptiva_React_Projecct/static/media/outfit-latin-400-normal.ced95e35e651c75c25a1.woff",
+    "static/media/outfit-latin-400-normal.woff2": "/Scriptiva_React_Projecct/static/media/outfit-latin-400-normal.350fba22377180d2d2a5.woff2",
+    "static/media/outfit-latin-ext-400-normal.woff": "/Scriptiva_React_Projecct/static/media/outfit-latin-ext-400-normal.09ba3cd591af4e078008.woff",
+    "static/media/outfit-latin-ext-400-normal.woff2": "/Scriptiva_React_Projecct/static/media/outfit-latin-ext-400-normal.9461ad6c48bef062aec8.woff2",
+    "index.html": "/Scriptiva_React_Projecct/index.html",
+    "main.033c6540.css.map": "/Scriptiva_React_Projecct/static/css/main.033c6540.css.map",
+    "main.2146b0e6.js.map": "/Scriptiva_React_Projecct/static/js/main.2146b0e6.js.map",
+    "453.51b6937f.chunk.js.map": "/Scriptiva_React_Projecct/static/js/453.51b6937f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.033c6540.css",
+    "static/js/main.2146b0e6.js"
+  ]
+}
