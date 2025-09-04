@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Scriptiva_React_Projecct/static/css/main.ed380742.css",
+    "main.css": "/Scriptiva_React_Projecct/static/css/main.ead62dd2.css",
     "main.js": "/Scriptiva_React_Projecct/static/js/main.db872d90.js",
     "static/media/bg.jpg": "/Scriptiva_React_Projecct/static/media/bg.5c4053191e9794f2af4c.jpg",
     "static/media/outfit-latin-400-normal.woff": "/Scriptiva_React_Projecct/static/media/outfit-latin-400-normal.ced95e35e651c75c25a1.woff",
@@ -8,11 +8,11 @@
     "static/media/outfit-latin-ext-400-normal.woff": "/Scriptiva_React_Projecct/static/media/outfit-latin-ext-400-normal.09ba3cd591af4e078008.woff",
     "static/media/outfit-latin-ext-400-normal.woff2": "/Scriptiva_React_Projecct/static/media/outfit-latin-ext-400-normal.9461ad6c48bef062aec8.woff2",
     "index.html": "/Scriptiva_React_Projecct/index.html",
-    "main.ed380742.css.map": "/Scriptiva_React_Projecct/static/css/main.ed380742.css.map",
+    "main.ead62dd2.css.map": "/Scriptiva_React_Projecct/static/css/main.ead62dd2.css.map",
     "main.db872d90.js.map": "/Scriptiva_React_Projecct/static/js/main.db872d90.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed380742.css",
+    "static/css/main.ead62dd2.css",
     "static/js/main.db872d90.js"
   ]
 }
