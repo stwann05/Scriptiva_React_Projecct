@@ -20,7 +20,7 @@ const slides = [
     desc: "Telah membantu lebih dari 1200+ klien sukses",
     btnText: "Mulai Sekarang",
     btnLink: "#kontak",
-    img: process.env.PUBLIC_URL + "/assets/hero-banner/person3.png",
+    img: process.env.PUBLIC_URL + "/assets/hero-banner/person2.png",
   },
   {
     icon: <FaChartBar size={50} color="#233657" />,
@@ -28,7 +28,7 @@ const slides = [
     desc: "Skripsi, Tesis, hingga Olah Data Statistik",
     btnText: "Hubungi Kami",
     btnLink: "#kontak",
-    img: process.env.PUBLIC_URL + "/assets/hero-banner/person2.png",
+    img: process.env.PUBLIC_URL + "/assets/hero-banner/person3.png",
   },
 ];
 
@@ -102,7 +102,7 @@ function Hero() {
       onMouseLeave={handleMouseLeave}
     >
       <div className="container d-flex flex-wrap align-items-center">
-        <div className="col-md-6 hero-text">
+        <div className="col-md-5 hero-text">
           <h1 className="d-flex align-items-center gap-3">
             {slides[current].icon}
             {slides[current].title}
@@ -112,7 +112,7 @@ function Hero() {
             {slides[current].btnText}
           </a>
         </div>
-        <div className="col-md-6 hero-image text-center">
+        <div className="col-md-7 hero-image text-center">
           <img
             src={slides[current].img}
             alt="Hero Banner"

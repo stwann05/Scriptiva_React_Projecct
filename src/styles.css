@@ -1,5 +1,8 @@
 body {
   font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 /* === Navbar Styling === */
@@ -10,7 +13,7 @@ body {
 }
 
 .navbar-brand img {
-  height: 45px;
+  height: clamp(32px, 4vw, 48px);
   transition: transform 0.3s ease;
 }
 
@@ -26,18 +29,19 @@ body {
 }
 
 .nav-link:hover {
-  color: #ff9b40 !important; /* biru Bootstrap */
+  color: #ff9b40 !important;
   transform: translateY(-2px);
 }
 
 .navbar-toggler {
   border: none;
 }
-
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
+
+/* === Hero Section === */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -51,7 +55,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 80px 20px;
+  padding: clamp(50px, 8vw, 100px) 20px;
 }
 
 .hero-container {
@@ -60,24 +64,24 @@ body {
   justify-content: space-between;
   max-width: 1200px;
   width: 100%;
-  gap: 40px;
-  flex-wrap: wrap; /* biar responsif */
+  gap: clamp(20px, 5vw, 60px);
+  flex-wrap: wrap;
 }
 
 .hero-text {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   font-weight: 700;
   margin-bottom: 20px;
   color: #233657;
 }
 
 .hero-text p.lead {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
   margin-bottom: 10px;
 }
 
@@ -85,7 +89,7 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 30px;
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   border-radius: 50px;
   transition: all 0.3s ease;
   background-color: #233657;
@@ -93,7 +97,6 @@ body {
   border: none;
   text-decoration: none;
 }
-
 .hero-text .btn-primary:hover {
   background-color: #ff9b40;
   transform: translateY(-3px);
@@ -101,173 +104,51 @@ body {
 
 .hero-image {
   flex: 1;
-  min-width: 400px;
-  width: 350px;
+  min-width: 500px;
+  width: 500px;
   text-align: center;
-  mix-blend-mode: multiply;
 }
-
-/* Section Keunggulan */
-#keunggulan {
-  background: #f9fbfd;
-  padding: 80px 0;
-}
-
-#keunggulan h2 {
-  font-size: 2.2rem;
-  color: #233657;
-  margin-bottom: 50px;
-}
-
-#keunggulan .card {
-  border: none;
-  border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #ffffff;
-}
-
-#keunggulan .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-#keunggulan h4 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  color: #233657;
-}
-
-#keunggulan p {
-  font-size: 1rem;
-  color: #444;
-}
-
-/* Section Proses */
-#proses {
-  background: #f4f6f9;
-  padding: 80px 0;
-}
-
-#proses h2 {
-  font-size: 2.2rem;
-  color: #233657;
-  margin-bottom: 50px;
-}
-
-#proses .card {
-  border: none;
-  border-radius: 15px;
-  background: #ffffff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-}
-
-#proses .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-#proses h4 {
-  font-size: 1.2rem;
-  color: #233657;
-  margin-bottom: 15px;
-}
-
-#proses p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Step Number Badge */
-#proses .card h4::before {
-  content: " ";
+.hero-image img {
+  width: auto;
+  height: 520px; /* samakan tinggi */
+  object-fit: contain;
+  margin: 0 auto;
   display: block;
-  width: 40px;
-  height: 40px;
-  background: #233657;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 50%;
-  line-height: 40px;
-  text-align: center;
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-/* layanan */
-.layanan {
+/* === Section Headings === */
+#keunggulan h2,
+#proses h2,
+#testimoni h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
   color: #233657;
-}
-.layanan-card {
-  position: relative;
-  background: #fff;
-  border-radius: 15px;
-  padding: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 50px;
   text-align: center;
-  cursor: pointer;
+  font-weight: 700;
 }
 
-.layanan-card:hover {
-  transform: translateY(-10px);
+/* === Cards (Keunggulan, Proses, Layanan, Testimoni) === */
+.card,
+.layanan-card,
+.card-testimoni {
+  border-radius: 15px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.layanan-card:hover,
+.card-testimoni:hover {
+  transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(35, 54, 87, 0.2);
 }
 
-/* Judul Paket */
-.layanan-card h3 {
-  color: #233657;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-/* Harga Paket */
-.layanan-card .harga {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff9b40;
-  margin-bottom: 15px;
-}
-
-/* fitur list */
-.fitur-list {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: translateY(10px);
-  transition: all 0.4s ease;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.layanan-card:hover .fitur-list {
-  opacity: 1;
-  max-height: 500px;
-  transform: translateY(0);
-  margin-top: 15px;
-}
-
-.fitur-list li {
-  padding: 8px 0;
-  font-size: 0.95rem;
-  color: #444;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.fitur-list li:last-child {
-  border-bottom: none;
-}
-
-/* Tombol */
+/* Tombol Layanan */
 .btn-custom {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 28px;
+  padding: clamp(10px, 2vw, 14px) clamp(20px, 3vw, 32px);
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   background-color: #233657;
   color: #fff;
   text-decoration: none;
@@ -283,50 +164,23 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Judul selaras brand */
-#testimoni h2 {
-  color: #233657;
-  font-weight: 700;
-}
-
-/* Kartu testimoni */
-.card-testimoni {
-  position: relative;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  cursor: pointer;
-  will-change: transform, box-shadow;
-}
-
-/* Hover untuk device yang mendukung hover (desktop/laptop) */
-@media (hover: hover) and (pointer: fine) {
-  .card-testimoni:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
-  }
-}
-
-/* Fallback mobile: class aktif meniru hover */
-.card-testimoni.is-active {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
-}
-
-/* Konten */
-.teks-testimoni {
-  font-size: 1rem;
-  line-height: 1.6;
-  font-style: italic;
-  color: #6c757d; /* mirip text-muted */
+/* === Fitur list di layanan === */
+.fitur-list {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+  text-align: left;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.nama-testimoni {
+.layanan-card:hover .fitur-list {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
   margin-top: 15px;
-  font-weight: 700;
-  color: #233657; /* selaras dengan judul */
 }
 
 .footer {
@@ -379,52 +233,20 @@ body {
   padding-top: 15px;
 }
 
-/* Mobile first (max 576px) */
+/* === Responsive Breakpoints === */
+/* Mobile (max 576px) */
 @media (max-width: 576px) {
-  .navbar-brand img {
-    height: 38px;
-  }
-
   .nav-link {
     margin-left: 0;
     padding: 10px 0;
   }
-
-  #hero {
-    padding: 60px 15px;
-    text-align: center;
-  }
-
   .hero-container {
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    text-align: center;
   }
-
-  .hero-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-text p.lead {
-    font-size: 1rem;
-  }
-
-  .hero-text .btn-primary {
-    padding: 10px 24px;
-    font-size: 1rem;
-  }
-
   .hero-image img {
     max-width: 90%;
-    margin-top: 20px;
   }
-
-  #keunggulan h2,
-  #proses h2,
-  #testimoni h2 {
-    font-size: 1.6rem;
-  }
-
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -434,38 +256,22 @@ body {
 
 /* Tablet (576px - 991px) */
 @media (min-width: 576px) and (max-width: 991px) {
-  .hero-text h1 {
-    font-size: 2.4rem;
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
   }
-
-  .hero-text p.lead {
-    font-size: 1.2rem;
-  }
-
-  .hero-text .btn-primary {
-    padding: 12px 28px;
-    font-size: 1.05rem;
-  }
-
   .footer-container {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 }
 
-/* Desktop (min 992px) */
-@media (min-width: 992px) {
-  .hero-text h1 {
-    font-size: 3rem;
-  }
-
-  .hero-text p.lead {
-    font-size: 1.3rem;
-  }
-
+/* Monitor besar (≥1400px) */
+@media (min-width: 1400px) {
   .hero-container {
-    flex-direction: row;
-    justify-content: space-between;
+    max-width: 1400px;
+  }
+  .hero-text h1 {
+    font-size: 4rem;
   }
 }
