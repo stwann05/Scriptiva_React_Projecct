@@ -104,18 +104,22 @@ body {
 
 .hero-image {
   flex: 1;
-  min-width: 500px;
-  width: 500px;
+  min-width: 300px;
+  max-width: 500px;
   text-align: center;
 }
 .hero-image img {
-  width: auto;
-  height: 520px; /* samakan tinggi */
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   object-fit: contain;
   margin: 0 auto;
   display: block;
 }
 
+.layanan {
+  color: #233657;
+}
 /* === Section Headings === */
 #keunggulan h2,
 #proses h2,
@@ -183,8 +187,9 @@ body {
   margin-top: 15px;
 }
 
+/* === Footer === */
 .footer {
-  background: #b3ecf3; /* sesuai screenshootmu */
+  background: #b3ecf3;
   padding: 40px 20px;
   color: #333;
 }
@@ -244,8 +249,16 @@ body {
     flex-direction: column;
     text-align: center;
   }
+  .hero-text {
+    order: 2;
+  }
+  .hero-image {
+    order: 1;
+    margin-bottom: 20px;
+  }
   .hero-image img {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
   }
   .footer-container {
     flex-direction: column;
@@ -259,6 +272,13 @@ body {
   .hero-container {
     flex-direction: column;
     text-align: center;
+  }
+  .hero-text {
+    order: 2;
+  }
+  .hero-image {
+    order: 1;
+    margin-bottom: 30px;
   }
   .footer-container {
     flex-direction: column;
