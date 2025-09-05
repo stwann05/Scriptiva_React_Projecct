@@ -295,3 +295,32 @@ body {
     font-size: 4rem;
   }
 }
+
+.whatsapp-float {
+  position: fixed !important; /* pastikan fixed */
+  right: 20px; /* kanan bawah */
+  bottom: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  background-color: #233657; /* warna tombol */
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 576px) {
+  .whatsapp-float {
+    right: 15px;
+    bottom: 15px;
+    padding: 10px;
+  }
+}

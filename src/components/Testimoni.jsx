@@ -1,51 +1,65 @@
-import React, { useState } from "react";
+import React from "react";
+import Slider from "react-slick";
 
 function Testimoni() {
-  const [active, setActive] = useState(null);
-
   const dataTestimoni = [
     {
       nama: "Rina - Mahasiswa S2",
       teks: "Scriptiva sangat membantu saya menyelesaikan tesis tepat waktu. Konsultasinya jelas dan mudah dipahami.",
+      foto: process.env.PUBLIC_URL + "/assets/profile/rina.jpg",
     },
     {
       nama: "Andi - Mahasiswa S1",
       teks: "Bimbingan skripsi jadi lebih terarah, dan olah data statistiknya sangat profesional. Recommended!",
+      foto: process.env.PUBLIC_URL + "/assets/profile/andi.jpg",
     },
     {
-      nama: "Siti - Mahasiswa Akuntansi",
+      nama: "Viera - Mahasiswa Akuntansi",
       teks: "Awalnya bingung mulai dari mana, tapi dengan Scriptiva saya bisa lebih percaya diri menghadapi sidang.",
+      foto: process.env.PUBLIC_URL + "/assets/profile/viera.jpg",
     },
   ];
+
+  // Konfigurasi slider
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    arrows: false,
+  };
 
   return (
     <section id="testimoni" className="py-5 bg-light text-center">
       <div className="container">
-        <h2 className="fw-bold mb-4">Apa Kata Klien Kami?</h2>
-        <div className="row g-4">
+        <h2 className="fw-bold mb-5">Apa Kata Klien Kami?</h2>
+        <Slider {...settings}>
           {dataTestimoni.map((item, index) => (
-            <div key={index} className="col-md-4">
+            <div key={index} className="px-4">
               <div
-                className={`card-testimoni h-100 p-4 ${
-                  active === index ? "is-active" : ""
-                }`}
-                // Fallback mobile: tap untuk toggle efek “hover”
-                onTouchStart={() => setActive(active === index ? null : index)}
-                // Aksesibilitas: bisa toggle via keyboard juga
-                tabIndex={0}
-                role="button"
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    setActive(active === index ? null : index);
-                  }
-                }}
+                className="card-testimoni shadow p-4 rounded-3 bg-white mx-auto"
+                style={{ maxWidth: "600px" }}
               >
-                <p className="teks-testimoni">“{item.teks}”</p>
-                <h6 className="nama-testimoni">— {item.nama}</h6>
+                <img
+                  src={item.foto}
+                  alt={item.nama}
+                  className="rounded-circle mb-3"
+                  style={{
+                    width: "80px",
+                    height: "80px",
+                    objectFit: "cover",
+                    margin: "0 auto",
+                  }}
+                />
+                <p className="fst-italic">“{item.teks}”</p>
+                <h6 className="fw-bold mt-3">— {item.nama}</h6>
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
     </section>
   );

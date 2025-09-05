@@ -166,7 +166,11 @@ function Layanan() {
                   </ul>
                 )}
 
-                <a href="#kontak" className="btn-custom mt-auto rounded-pill">
+                <a
+                  href="https://wa.me/6281315292224?text=Halo%20Scriptiva%2C%20saya%20ingin%20konsultasi%20lebih%20lanjut."
+                  target="_blank"
+                  className="btn-custom mt-auto rounded-pill"
+                >
                   Daftar Sekarang
                 </a>
               </div>

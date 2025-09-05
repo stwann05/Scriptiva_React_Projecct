@@ -11,7 +11,8 @@ const slides = [
     title: "Scriptiva – Konsultan Pendidikan",
     desc: "Bantu Risetmu dengan CEPAT, TEPAT, & AKURAT",
     btnText: "Konsultasi Sekarang",
-    btnLink: "#kontak",
+    btnLink:
+      "https://wa.me/6281315292224?text=Halo%20saya%20ingin%20konsultasi%20tentang%20pendidikan",
     img: process.env.PUBLIC_URL + "/assets/hero-banner/person1.png",
   },
   {
@@ -19,7 +20,8 @@ const slides = [
     title: "Konsultan Penelitian",
     desc: "Telah membantu lebih dari 1200+ klien sukses",
     btnText: "Mulai Sekarang",
-    btnLink: "#kontak",
+    btnLink:
+      "https://wa.me/6281315292224?text=Halo%20saya%20ingin%20mulai%20konsultasi%20penelitian",
     img: process.env.PUBLIC_URL + "/assets/hero-banner/person2.png",
   },
   {
@@ -27,7 +29,8 @@ const slides = [
     title: "Bimbingan & Analisis Data",
     desc: "Skripsi, Tesis, hingga Olah Data Statistik",
     btnText: "Hubungi Kami",
-    btnLink: "#kontak",
+    btnLink:
+      "https://wa.me/6281315292224?text=Halo%20saya%20butuh%20bimbingan%20dan%20analisis%20data",
     img: process.env.PUBLIC_URL + "/assets/hero-banner/person3.png",
   },
 ];
