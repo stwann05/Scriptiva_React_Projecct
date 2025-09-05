@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Scriptiva_React_Projecct/static/css/main.4e3437e3.css",
-    "main.js": "/Scriptiva_React_Projecct/static/js/main.f4bf8f29.js",
+    "main.js": "/Scriptiva_React_Projecct/static/js/main.a69619cb.js",
     "static/media/bg.jpg": "/Scriptiva_React_Projecct/static/media/bg.5c4053191e9794f2af4c.jpg",
     "static/media/outfit-latin-400-normal.woff": "/Scriptiva_React_Projecct/static/media/outfit-latin-400-normal.ced95e35e651c75c25a1.woff",
     "static/media/outfit-latin-400-normal.woff2": "/Scriptiva_React_Projecct/static/media/outfit-latin-400-normal.350fba22377180d2d2a5.woff2",
@@ -9,10 +9,10 @@
     "static/media/outfit-latin-ext-400-normal.woff2": "/Scriptiva_React_Projecct/static/media/outfit-latin-ext-400-normal.9461ad6c48bef062aec8.woff2",
     "index.html": "/Scriptiva_React_Projecct/index.html",
     "main.4e3437e3.css.map": "/Scriptiva_React_Projecct/static/css/main.4e3437e3.css.map",
-    "main.f4bf8f29.js.map": "/Scriptiva_React_Projecct/static/js/main.f4bf8f29.js.map"
+    "main.a69619cb.js.map": "/Scriptiva_React_Projecct/static/js/main.a69619cb.js.map"
   },
   "entrypoints": [
     "static/css/main.4e3437e3.css",
-    "static/js/main.f4bf8f29.js"
+    "static/js/main.a69619cb.js"
   ]
 }
